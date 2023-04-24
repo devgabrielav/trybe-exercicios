@@ -1,0 +1,1 @@
+Primeiros exercicios que realizei no terminal.
