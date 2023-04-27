@@ -1,0 +1,41 @@
+div:hover{
+    border: 2px solid pink;
+}
+div:nth-of-type(1){
+    background-color: red;
+}
+div:nth-of-type(2){
+    background-color: green;
+}
+div:nth-of-type(3){
+    background-color: purple;
+}
+div:nth-of-type(4){
+    background-color: darkred;
+}
+div:nth-of-type(5){
+    background-color: lightblue;
+}
+div:nth-of-type(1) > h3 {
+    color: rgb(39, 30, 85);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div:nth-of-type(2) > h3 {
+    color: rgb(177, 42, 116);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div:nth-of-type(3) > h3 {
+    color: rgb(187, 152, 56);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div:nth-of-type(4) > h3 {
+    color: rgb(42, 141, 56);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div:nth-of-type(5) > h3 {
+    color: rgb(160, 38, 38);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div:nth-child(odd) h3{
+    font-style: italic;
+}
