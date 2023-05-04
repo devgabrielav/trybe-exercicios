@@ -90,7 +90,7 @@ if (num1 % 2 == 0 || num2 % 2 == 0|| num3 % 2 == 0){
 } else {
     epar = false;
     console.log(epar);
-} */
+} 
 
 let impostoCusto = 1520 / 5;
 let custoProduto = 1520 + impostoCusto;
@@ -101,4 +101,30 @@ if (impostoCusto < 0 || custoProduto < 0 || valorVenda < 0){
     console.log('Valores inválidos');
 } else {
     console.log(valorLucro);
+}*/
+
+//salario bruto - INSS && - IR
+
+let salarioB = 1500.10;
+let salarioL;
+if (salarioB < 1556.94 && salarioB < 1903.98){
+   console.log('Não paga INSS nem IR.Salário líquido: R$' + salarioB);
+} else if (salarioB == 1556.94 && salarioB < 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+} else if (salarioB >= 1556.95 && salarioB <= 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+} else if (salarioB == 1556.94 && salarioB < 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+} else if (salarioB == 1556.94 && salarioB < 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+} else if (salarioB == 1556.94 && salarioB < 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+} else if (salarioB == 1556.94 && salarioB < 1903.98){
+    salarioL = salarioB - 124.55;
+    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
 }

@@ -48,7 +48,7 @@ if (weekDay == 'Segunda-feira' || weekDay == 'Terça-feira' || weekDay == 'Quart
     console.log('Oba, mais um dia de aprendizado na Trybe >:D');
 } else {
     console.log('FINALMENTE, descanso merecido! UwU!');
-} */
+} 
 
 let statusC = 'aprovada';
 
@@ -65,4 +65,4 @@ switch (statusC) {
     default:
         console.log('Informação incorreta.');
         break;
-}
+}*/
