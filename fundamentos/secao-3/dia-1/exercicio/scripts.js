@@ -105,26 +105,50 @@ if (impostoCusto < 0 || custoProduto < 0 || valorVenda < 0){
 
 //salario bruto - INSS && - IR
 
-let salarioB = 1500.10;
-let salarioL;
-if (salarioB < 1556.94 && salarioB < 1903.98){
-   console.log('Não paga INSS nem IR.Salário líquido: R$' + salarioB);
-} else if (salarioB == 1556.94 && salarioB < 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
-} else if (salarioB >= 1556.95 && salarioB <= 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
-} else if (salarioB == 1556.94 && salarioB < 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
-} else if (salarioB == 1556.94 && salarioB < 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
-} else if (salarioB == 1556.94 && salarioB < 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
-} else if (salarioB == 1556.94 && salarioB < 1903.98){
-    salarioL = salarioB - 124.55;
-    console.log('INSS de 8%. Não paga IR. Salário líquido: R$' + salarioL);
+let salarioB = 2000;
+let salarioL ;
+
+if (salarioB <= 1556.94){
+    salarioL = salarioB - salarioB * 0.08;
+    console.log('Isento de IP.Alíquota de 8%.Salário líquido: ' + salarioL);
+} else if (salarioB <= 1903.98 && salarioB > 1556.95){
+    salarioL = salarioB - salarioB * 0.09;
+    console.log('Isento de IP.Alíquota de 9%.Salário líquido: ' + salarioL);
+} else if (salarioB <= 2594.92 && salarioB >= 1903.99 && salarioB <= 2825.65){
+    salarioL = salarioB - salarioB * 0.09 - salarioB * 0.075;
+    console.log('Alíquota de 9%.IP de 7,5%. Salário líquido: ' + salarioL);
+} else if (salarioB >= 2594.93 && salarioB <= 5189.82 && )
+
+
+/* 
+let aliquotINSS;
+let aliquotIR;
+
+let grossSalary = 2000.00;
+
+if (grossSalary <= 1556.94) {
+  aliquotINSS = grossSalary * 0.08;
+} else if (grossSalary <= 2594.92) {
+  aliquotINSS = grossSalary * 0.09;
+} else if (grossSalary <= 5189.82) {
+  aliquotINSS = grossSalary * 0.11;
+} else {
+  aliquotINSS = 570.88;
 }
+
+let baseSalary = grossSalary - aliquotINSS;
+
+if (baseSalary <= 1903.98) {
+  aliquotIR = 0;
+} else if (baseSalary <= 2826.65) {
+  aliquotIR = (baseSalary * 0.075) - 142.80;
+} else if (baseSalary <= 3751.05) {
+  aliquotIR = (baseSalary * 0.15) - 354.80;
+} else if (baseSalary <= 4664.68) {
+  aliquotIR = (baseSalary * 0.225) - 636.13;
+} else {
+  aliquotIR = (baseSalary * 0.275) - 869.36;
+};
+
+console.log("Salário: " + (baseSalary - aliquotIR));
+*/ 
