@@ -100,3 +100,18 @@ if (a % 2 == 1 || b % 2 == 1 || c % 2 == 1){
     console.log(false);
 } */
 
+/* let custoP = 1500;
+let custoPr = custoP + custoP * 0.20;
+let custoV = 3000;
+let lucroP = custoV - custoPr;
+
+if (custoPr < 0 || custoP < 0){
+    console.log('Valor incorreto');
+} else {
+    console.log('O custo do seu produto foi: R$' + custoPr);
+    console.log('Com o valor de venda de: R$' + custoV + '. ' + 'Seu lucro é de: R$' + lucroP);
+}
+ */
+
+
+
