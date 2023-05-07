@@ -113,5 +113,50 @@ if (custoPr < 0 || custoP < 0){
 }
  */
 
+let salarioB = 10000;
+let salarioLin;
+let salarioLt; 
+let inss;
+let ir;
+
+if (salarioB <= 1556.94){
+    inss = salarioB * 0.08;
+    salarioLin = salarioB - inss;
+    console.log(salarioLin);
+}else if (salarioB >= 1556.95 && salarioB <= 2594.92){
+    inss = salarioB * 0.09;
+    salarioLin = salarioB - inss;
+    console.log(salarioLin);
+} else if (salarioB >= 2594.93 && salarioB <= 5189.82){
+    inss = salarioB * 0.11;
+    salarioLin = salarioB - inss;
+    console.log(salarioLin);
+} else if (salarioB > 5189.82){
+    inss = 570.88
+    salarioLin = salarioB - inss;
+    console.log(salarioLin);
+}
+
+if (salarioLin < 1903.98){
+    console.log('Não paga IR');
+} else if(salarioLin >= 1903.99 && salarioLin <= 2826.65){
+    ir = salarioLin * 0.075 - 142.80;
+    salarioLt = salarioLin - ir ;
+    console.log(salarioLt + ' Após todos os descontos.'); 
+} else if (salarioLin >= 2826.66 && salarioLin <= 3751.05){
+    ir = salarioLin * 0.15 - 354.80;
+    salarioLt = salarioLin - ir ;
+    console.log(salarioLt + ' Após todos os descontos.');
+} else if (salarioLin >= 3751.06 && salarioLin <= 4664.68){
+    ir = salarioLin * 0.225 - 636.13;
+    salarioLt = salarioLin - ir;
+    console.log(salarioLt + ' Após todos os descontos.');
+} else if (salarioLin >= 4664.68){
+    ir = salarioLin * 0.275 - 869.36;
+    salarioLt = salarioLin - ir;
+    console.log(salarioLt + ' Após todos os descontos.');
+}
+
+
 
 
