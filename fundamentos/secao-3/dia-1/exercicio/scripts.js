@@ -1,154 +1,102 @@
-/* /* let numero1 = 35;
-let numero2 = 38;
-let numero3 = 78;
-let valorRecebido;
+/* let a = 7;
+let b = 3;
+let c = 10;
+let number = -5; */
 
-console.log(numero1 + numero2);
-console.log(numero1 - numero2);
-console.log(numero1 * numero2);
-console.log(numero1 / numero2);
-console.log(numero1 % numero2);
+/* console.log( a + b);
+console.log( a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b); */
 
-if (numero1 > numero2) {
-    console.log(numero1 + ' é maior')
+/* if (a > b) {
+    console.log(a + ' é o número maior.');
 } else {
-    console.log(numero2 + ' é maior');
-}
+    console.log(b + ' é o número maior.');
+} */
 
-if (numero1 > numero2 && numero1 > numero3) {
-    console.log(numero1 + ' é o número maior!')
-} else if (numero2 > numero1 && numero2 > numero3) {
-    console.log(numero2 + ' é o número maior!')
+/* if (a > b && a > c){
+    console.log(a + ' é o número maior.');
+} else if (b > a && b > c){
+    console.log(b + ' é o número maior.');
 } else {
-    console.log(numero3 + ' é o número maior!')
-}
+    console.log(c + ' é o número maior.');
+} */
 
-if (valorRecebido > 0) {
+/* if (number > 0){
     console.log('positive');
-} else if (valorRecebido < 0) {
+} else if (number < 0){
     console.log('negative');
+} else if (number == 0){
+    console.log('zero');
+} */
+
+/* let a = 60;
+let b = 60;
+let c = 60;
+
+if (a + b + c == 180 && a + b + c > 0){
+    console.log(true);
 } else {
-    console.log('0');
-}
+    console.log(false);
+} */
 
-let angulo1 = 60;
-let angulo2 = 60;
-let angulo3 = 60;
-let resultado;
+/* let pecaX = 'dama';
+let result = pecaX.toLowerCase();
 
-if (angulo1 + angulo2 + angulo3 == 180) {
-    resultado = true;
-    console.log(resultado);
-} else {
-    resultado = false;
-    console.log(resultado);
-}
- 
-let cavalo = 'L';
-
-switch (cavalo) {
-    case 'L' || 'l':
-        console.log('Cavalo movimenta em L');
-        break;
-    default:
-        console.log('Error');
+switch (result) {
+    case 'cavalo':
+        console.log('Movimenta em L.');
         break
-} 
+    case 'bispo':
+        console.log('Movimenta em diagonal.');
+        break
+    case 'dama':
+        console.log('Movimenta em qualquer direção, desde que estejam livres.');
+        break
+    case 'rei':
+        console.log('Movimenta em qualquer direção que esteja livre, porém somente uma casa por vez.');
+        break
+    case 'torre':
+        console.log('Movimenta em linha reta, vertical ou horizontal, quantas casas quiser.');
+        break
+    case 'peão':
+        console.log('Movimenta sempre em frente, uma casa por vez, exceto no primeiro movimento que pode se mover duas casas.');
+        break
+} */
 
-let nota = 150;
+/* let porcentagem = 49;
 
-if (nota >= 90 && nota <= 100){
-    console.log('A');
-}
-else if (nota >= 80 && nota <= 100){
-    console.log('B');
-}
-else if (nota >= 70 && nota <= 100){
-    console.log('C');
-}
-else if (nota >= 60 && nota <= 100){
-    console.log('D');
-}
-else if (nota >= 50 && nota <= 100){
-    console.log('E');
-} 
-else if (nota < 50){
-    console.log('F');
-} 
-else if (nota < 0 || nota > 100){
-    console.log('Nota inválida');
-} 
+if (porcentagem >= 90 && porcentagem <= 100){
+    console.log('Nota A');
+} else if (porcentagem >= 80 && porcentagem <= 89){
+    console.log('Nota B');
+} else if (porcentagem >= 70 && porcentagem <= 79){
+    console.log('Nota C');
+} else if (porcentagem >= 60 && porcentagem <= 69){
+    console.log('Nota D');
+} else if (porcentagem >= 50 && porcentagem <= 59){
+    console.log('Nota E');
+} else if (porcentagem < 50 && porcentagem >= 0){
+    console.log('Nota F');
+} else if (porcentagem < 0 || porcentagem > 100) {
+    console.log('Valor incorreto');
+} */
 
-let num1 = 5;
-let num2 = 10;
-let num3 = 13;
-let epar;
+/* let a = 3;
+let b = 7;
+let c = 22;
 
-if (num1 % 2 == 0 || num2 % 2 == 0|| num3 % 2 == 0){
-    epar = true;
-    console.log(epar);
+ if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0){
+    console.log(true);
 } else {
-    epar = false;
-    console.log(epar);
+    console.log(false);
 } 
 
-let impostoCusto = 1520 / 5;
-let custoProduto = 1520 + impostoCusto;
-let valorVenda = 2000;
-let valorLucro = valorVenda - custoProduto;
 
-if (impostoCusto < 0 || custoProduto < 0 || valorVenda < 0){
-    console.log('Valores inválidos');
+if (a % 2 == 1 || b % 2 == 1 || c % 2 == 1){
+    console.log(true);
 } else {
-    console.log(valorLucro);
-}*/
+    console.log(false);
+} */
 
-//salario bruto - INSS && - IR
-
-let salarioB = 2000;
-let salarioL ;
-
-if (salarioB <= 1556.94){
-    salarioL = salarioB - salarioB * 0.08;
-    console.log('Isento de IP.Alíquota de 8%.Salário líquido: ' + salarioL);
-} else if (salarioB <= 1903.98 && salarioB > 1556.95){
-    salarioL = salarioB - salarioB * 0.09;
-    console.log('Isento de IP.Alíquota de 9%.Salário líquido: ' + salarioL);
-} else if (salarioB <= 2594.92 && salarioB >= 1903.99 && salarioB <= 2825.65){
-    salarioL = salarioB - salarioB * 0.09 - salarioB * 0.075;
-    console.log('Alíquota de 9%.IP de 7,5%. Salário líquido: ' + salarioL);
-} else if (salarioB >= 2594.93 && salarioB <= 5189.82 && )
-
-
-/* 
-let aliquotINSS;
-let aliquotIR;
-
-let grossSalary = 2000.00;
-
-if (grossSalary <= 1556.94) {
-  aliquotINSS = grossSalary * 0.08;
-} else if (grossSalary <= 2594.92) {
-  aliquotINSS = grossSalary * 0.09;
-} else if (grossSalary <= 5189.82) {
-  aliquotINSS = grossSalary * 0.11;
-} else {
-  aliquotINSS = 570.88;
-}
-
-let baseSalary = grossSalary - aliquotINSS;
-
-if (baseSalary <= 1903.98) {
-  aliquotIR = 0;
-} else if (baseSalary <= 2826.65) {
-  aliquotIR = (baseSalary * 0.075) - 142.80;
-} else if (baseSalary <= 3751.05) {
-  aliquotIR = (baseSalary * 0.15) - 354.80;
-} else if (baseSalary <= 4664.68) {
-  aliquotIR = (baseSalary * 0.225) - 636.13;
-} else {
-  aliquotIR = (baseSalary * 0.275) - 869.36;
-};
-
-console.log("Salário: " + (baseSalary - aliquotIR));
-*/ 
