@@ -1,65 +1,32 @@
-/* 
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+/* let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+//let menuServices = menu.indexOf('Serviços');
+//let menuServices = menu.indexOf('Portfólio');
+menu.push('Contato');
+console.log(menu);
 
-for (index = 0; index < groceryList.length; index += 1) {
-    console.log(groceryList[index]) 
-}
+ */
 
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+/* let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for (index = 0; index < groceryList.length; index += 1){
+    console.log(groceryList[index]);
+} */
+
+/* let names = ['João', 'Maria', 'Antônio', 'Margarida'];
 
 for (let name of names){
-console.log(name);
-}*/
+    console.log(name);
+} */
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-/* let sum = 0;
+/* let fruits = [3, 4, 10, 1, 12];
+let sum = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
-    sum += numbers[index];
-    //console.log(sum);
-    //console.log(numbers[index]);
+for (index = 0; index < fruits.length; index += 1){
+    sum += fruits[index];
 }
 
-let media = numbers.length / 10;
-//console.log(media);
-
-if (media > 20){
-    //console.log('O valor da média aritmética é maior que 20');
+if (sum > 15){
+    console.log(sum);
 } else {
-    //console.log('O valor da média aritmética é menor ou igual a 20');
-}
-
-
-let numeroMaior = numbers[0];
-
-for (let index = 1; index < numbers.length; index += 1){
-    if (numbers[index] > numeroMaior){
-        numeroMaior = numbers[index];
-        //console.log(numeroMaior);
-    }
-} 
-let numerosImpares;
-for (let index = 1; index < numbers.length; index += 1){
-    if (numbers[index] % 2 != 0){
-        numerosImpares = numbers[index];
-        console.log(numerosImpares);
-    } else {
-        console.log('Nenhum valor ímpar encontrado');
-    }
-} 
-
-
-let numeroMenor = numbers[0];
-
-for (let index = 1; index < numbers.length; index += 1){
-    if ( numbers[index] < numeroMenor){
-        numeroMenor = numbers[index];
-        console.log(numeroMenor);
-    }
-} 
-
-for (let array = 1; array <= 25; array += 1) {
-     console.log(array);
-    let divisao = array / 2;
-    console.log(divisao);
+    console.log('Valor menor que 16.');
 } */
