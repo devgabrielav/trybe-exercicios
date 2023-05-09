@@ -1,120 +1,131 @@
 /* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0;
-let media;
 
-for (let index = 0; index < numbers.length; index += 1){
+for (let index = 0; index < numbers.length; index += 1) {
     //console.log(numbers[index]);
-    sum += numbers[index];
-    //console.log(sum);
-    media = sum / numbers.length;
-   // console.log(media);
 }
 
-if (media > 20){
-    //console.log('O valor da média aritmética é maior que 20');
+let sum = 0;
+let media = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+    sum += numbers[index];
+}
+//console.log(sum);
+
+for (let index = 0; index < numbers.length; index += 1) {
+    media = sum / numbers.length;
+}
+//console.log(media);
+
+if (media > 20) {
+   // console.log('O valor da média aritmética é maior que 20');
 } else {
     //console.log('O valor da média aritmética é menor ou igual a 20');
 }
+
 let biggestNumber = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1){
-    if ( numbers[index] > biggestNumber){
-        biggestNumber = numbers[index]
-        //console.log(biggestNumber);
-    } 
-}
-let numI;
-
 for (let index = 0; index < numbers.length; index += 1){
-    if (numbers[index] % 2 == 1){
-        numI = numbers[index];
-        //console.log(numI);
+    if (numbers[index] > biggestNumber){
+        biggestNumber = numbers[index];
+    }
+}
+console.log(biggestNumber);
+
+
+for (index = 0; index < numbers.length; index += 1){
+    let numIm = 0;
+    if (numbers[index] % 2 === 1){
+        numIm = numbers[index];
+        console.log(numIm);
     } else {
-       // console.log('Nenhum valor ímpar encontrado.');
+        console.log('Nenhum valor ímpar encontrado');
     }
 }
 
-let smallerNumber = numbers[0];
+let smallestNumber = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1){
-    if ( numbers[index] < smallerNumber){
-        smallerNumber = numbers[index]
-        console.log(smallerNumber);
-    } 
-} */
-/* let divisao;
-
-for (let index = 1; index <= 25; index += 1){
-    //console.log(index);
-    divisao = index / 2;
-    console.log(divisao);
-} */
-
-/* let fato = 1;
-
-for (let index = 10; index > 0 ; index -= 1){
-    fato *= index;
+for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] < smallestNumber){
+        smallestNumber = numbers[index];
+    }
 }
-console.log(fato); */
+console.log(smallestNumber);
+for (let index = 1; index <= 25; index += 1){
+    console.log(index);
+    let div = 0;
+    div = index / 2;
+    console.log(div);
+} 
 
-/* let word = 'tryber';
-let reverse =' ';
+let mult = 1;
+for (let fatorial = 10; fatorial > 0; fatorial -= 1){
+    mult *= fatorial;
+    console.log(mult);
+}
 
-for (let index = 0; index < word.length; index += 1){
-    reverse += word[word.length - 1 - index];
-    //console.log(reverse);
+let word = 'tryber';
+let reverse = '';
+for (let index = word.length - 1; index >= 0; index -= 1){
+    reverse += word[index];
+    console.log(reverse);
 }
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
-let biggerWord = array[0];
-let smallerWord = array[0];
+let biggestWord = array[0];
+let smallestWord = array[0];
 
-for (let index = 0; index < array.length; index += 1){
-    if (array[index].length > biggerWord.length){
-        biggerWord = array[index];
-        console.log(biggerWord);
-    } 
-    if (array[index].length < smallerWord.length){
-        smallerWord = array[index];
-        console.log(smallerWord);
+for (index = 0; index < array.length; index += 1){
+    if (array[index].length > biggestWord.length){
+        biggestWord = array[index];
+        console.log(biggestWord);
     }
-} */
+    if (array[index].length < smallestWord.length){
+        smallestWord = array[index];
+        console.log(smallestWord);
+    }
+}
 
-/* let numP;
 
-for (let index = 2; index <= 50; index += 1){
-    let isPrime = true;
-    for (let divisor = 2; divisor < index; divisor += 1){
-        if (index % divisor === 0){
-            isPrime = false;
-        } if (isPrime) {
-           numP = index; 
+let biggestN = 2;
+
+
+for (index = 2; index <= 50; index += 1){
+    if (index > biggestN && index % 2 !== 0){
+        biggestN = index;
+    }
+}
+console.log(biggestN); */
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 1; index < numbers.length; index += 1){
+    for (let index2 = 0; index2 < index; index2 += 1){
+        if (numbers[index] < numbers[index2]){
+            let cresc = numbers[index];
+            numbers[index] = numbers[index2];
+            numbers[index2] = cresc;
         }
     }
 }
-console.log(numP); */
-
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let troca;
-
+//console.log(numbers);
 
 for (let index = 1; index < numbers.length; index += 1){
-    for (let pos = 0; pos < index; pos += 1)
-    if (numbers[index] < numbers[pos]){
-        troca = numbers[index];
-        numbers[index] = numbers[pos];
-        numbers[pos] = troca;
+    for (let index2 = 0; index2 < index; index2 += 1){
+        if (numbers[index] > numbers[index2]){
+            let decresc = numbers[index];
+            numbers[index] = numbers[index2];
+            numbers[index2] = decresc;
+        }
     }
 }
-console.log(numbers);
+//console.log(numbers);
 
-for (let index = 1; index < numbers.length; index += 1){
-    for (let pos = 0; pos < index; pos += 1)
-    if (numbers[index] > numbers[pos]){
-        troca = numbers[index];
-        numbers[index] = numbers[pos];
-        numbers[pos] = troca;
-    }
+/* let newNumbers = [];
+
+for (let index = 0; index < numbers.length; index += 1){
+    
+        newNumbers = numbers[index] * numbers[index2];
+    
 }
-
-console.log(numbers);
+console.log(newNumbers); */
