@@ -96,8 +96,8 @@ for (index = 2; index <= 50; index += 1){
     }
 }
 console.log(biggestN); */
-
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*
+ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 for (let index = 1; index < numbers.length; index += 1){
     for (let index2 = 0; index2 < index; index2 += 1){
@@ -119,13 +119,25 @@ for (let index = 1; index < numbers.length; index += 1){
         }
     }
 }
-//console.log(numbers);
+console.log(numbers);
+ 
+ let newNumbers = [];
+ let multiplica = 0;
 
-/* let newNumbers = [];
-
-for (let index = 0; index < numbers.length; index += 1){
-    
-        newNumbers = numbers[index] * numbers[index2];
-    
+for (let index = 0; index < numbers.length - 1; index += 1){
+    multiplica = numbers[index] * numbers[index + 1];
+    newNumbers.push(multiplica);
 }
 console.log(newNumbers); */
+
+//let n = 5;
+
+let n = 5;
+
+for (let index = 0; index < n; index += 1){
+    let star = '';
+    for (let index2 = 0; index2 < n; index2 += 1)
+        star += '* '
+        console.log(star);
+    }
+
