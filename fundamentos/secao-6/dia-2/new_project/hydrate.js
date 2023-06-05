@@ -1,13 +1,16 @@
+let nums;
 const hydrate = (string) => {
-  for(let index = 0; index < string.length; index += 1){
-  if (parseInt(string[index]) !== isNaN) {
-    if (string[index] === 1){
-      return `${string[index]} copo de água`
-    }
-    return `${string[index]} copos de água`
+  string.split();
+  if (string.match(/\d+/)) {
+    nums += string.match(/\d+/);
   }
-}
+  if (nums == 1){
+    return `${nums} copo de água`
+  }
+  return `${nums} copos de água`
 }
 
-console.log(hydrate('1 cerveja'));
+
+
+console.log(hydrate('2 cerveja'));
 module.exports = hydrate;
