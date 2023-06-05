@@ -96,30 +96,47 @@ const clients = [
 ];
 
 const findPersonByName = (name) => {
-  for (let index = 0; index < clients.length; index += 1){
-    if(name === clients[index].name){
-      return `Destinatário: ${name}. Endereço: ${clients[index].address.street}, ${clients[index].address.number}, ${clients[index].address.neighborhood}, ${clients[index].address.city} - ${clients[index].address.state}. CEP: ${clients[index].address.cep}`
+  for (let index = 0; index < clients.length; index += 1) {
+    if (name === clients[index].name) {
+      return `Destinatário: ${name}. Endereço: ${clients[index].address.street}, ${clients[index].address.number}, ${clients[index].address.neighborhood}, ${clients[index].address.city} - ${clients[index].address.state}. CEP: ${clients[index].address.cep}`;
     } else {
-      throw new Error ('Pessoa não encontrada, tente novamente');
+      throw new Error('Pessoa não encontrada, tente novamente');
     }
-}
+  }
 };
 
 /* console.log(findPersonByName('João da Silva'));
 console.log(findPersonByName('Gabi')); */
 
 const findPersonByPosition = (position) => {
-  for (let index = 0; index < clients.length; index += 1){
-    if (position[index] === clients[index]){
-      return `Cliente: ${clients[index].name}. email: ${clients[index].email}`
-    } else {
-      throw new Error ('Posição inválida, tente novamente');
-    }
+  if (position) {
+    return `Cliente: ${position.name}. email: ${position.email}`;
   }
+  throw new Error('Posição inválida, tente novamente');
 };
 
-console.log(findPersonByPosition(clients[2]));
+/* console.log(findPersonByPosition(clients[2])); */
+
+const validaArray = (array) => {
+  if (array.length === 0) {
+    throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+  }
+}
+
 
 const findPeopleByState = (state) => {
-  // seu código aqui
+  try {
+    const pessoas = [];
+  for (let index = 0; index < clients.length; index += 1) {
+    if (state === clients[index].address.state) {
+      pessoas.push(clients[index].name);
+    }
+  }
+  validaArray(pessoas);
+  return pessoas;
+} catch (error) {
+  return error.message;
+}
 };
+
+console.log(findPeopleByState('S'));
